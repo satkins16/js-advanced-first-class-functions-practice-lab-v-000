@@ -23,3 +23,9 @@ const driversByName = function (drivers) {
     return driverOne.name.localeCompare(driverTwo.name)
   })
 }
+
+const totalRevenue = function (drivers) {
+  return drivers.reduce(function (total, driver) {
+    return driver.revenue + total
+  })
+}
